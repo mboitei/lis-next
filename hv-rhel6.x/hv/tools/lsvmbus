@@ -92,7 +92,7 @@ format2 = '%2s: Class_ID = %s - %s\n\tDevice_ID = %s\n\tSysfs path: %s\n%s'
 
 for d in vmbus_dev_list:
 	if verbose == 0:
-		print(('VMBUS ID ' + format0) % (d.vmbus_id, d.dev_desc))
+		print (('VMBUS ID ' + format0) % (d.vmbus_id, d.dev_desc))
 	elif verbose == 1:
 		print (('VMBUS ID ' + format1) %	\
 			(d.vmbus_id, d.class_id, d.dev_desc, d.chn_vp_mapping))
