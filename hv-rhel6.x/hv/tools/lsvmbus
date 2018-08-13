@@ -17,7 +17,7 @@ if options.verbose is not None:
 vmbus_sys_path = '/sys/bus/vmbus/devices'
 if not os.path.isdir(vmbus_sys_path):
 	print "%s doesn't exist: exiting..." % vmbus_sys_path)
-exit(-1)
+	exit(-1)
 
 vmbus_dev_dict = {
 	'{0e0b6031-5213-4934-818b-38d90ced39db}' : '[Operating system shutdown]',
